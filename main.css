@@ -1,0 +1,36 @@
+.card-body {
+    position: absolute;
+    margin-top: auto;
+    display: flex;
+    padding-left: 2rem;
+}
+
+.card-tag:hover > .card-tag-target {
+    display: none;
+}
+
+.card-tag:hover > .card-scroll-body {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.2s;
+    transition-property: opacity, visibility;
+}
+
+
+.card-scroll-body {
+    transition-duration: 0.2s;
+    transition-property: opacity, visibility;
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    height: 100%;
+    padding: 2rem;
+}
+
+.btn-primary {
+    border-radius: 20px;
+}
+
+.carousel-cell {
+    height: 200px;
+}
