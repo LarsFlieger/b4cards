@@ -72,10 +72,70 @@
         </div>
     </div>
 
+
+
+    <div class="container-fluid bg-warning">
+        <div class="container pt-3 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-6 d-flex">
+                    <h3 class="display-1 text-white font-weight-bold">+</h3>
+                    <h2 class="h1 text-dark" style="margin-top: 5rem">In einer digitalen Welt ist ein herausragendes Design der Schlüssel zum Erfolg.</h2>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center font-weight-bold">
+                    <a class="text-dark" href="#"><i class="fas fa-phone text-white"></i> +49 176 34240750</a>
+                    <a class="text-dark" href="#"><i class="fas fa-inbox text-white"></i> kontakt@mijo-design.com</a>
+                </div>
+                <div class="col-3 d-flex flex-column justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><a class="text-dark" href="">Was bieten wir an?</a></li>
+                        <li><a class="text-dark" href="">Arbeiten</a></li>
+                        <li><a class="text-dark" href="">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-warning">
+        <div class="container" style="padding: 5rem 0 5rem 0">
+            <div class="row">
+                <div class="col-3 d-flex flex-column align-items-center">
+                    <h3 class="display-3 font-weight-bold"><span class="count">5</span><small class="h6 font-weight-normal">Jahre</small></h3>
+                    <h2 class="font-weight-bold h5">Erfahrung</h2>
+                </div>
+                <div class="col-3 d-flex flex-column align-items-center">
+                    <h3 class="display-3 font-weight-bold"><span class="count">100</span><small class="h6 font-weight-normal">%</small></h3>
+                    <h2 class="font-weight-bold h5">Leidenschaft</h2>
+                </div>
+                <div class="col-3 d-flex flex-column align-items-center">
+                    <h3 class="display-3 font-weight-bold"><span class="count">16</span><small class="h6 font-weight-normal">abgeschlossene</small></h3>
+                    <h2 class="font-weight-bold h5">Projekte</h2>
+                </div>
+                <div class="col-3 d-flex flex-column align-items-center">
+                    <h3 class="display-3 font-weight-bold"><i class="fas fa-heart"></i><small class="h6 font-weight-normal">gemacht mit</small></h3>
+                    <h2 class="font-weight-bold h5">Liebe</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html>
+
+    <script>
+        $('.count').each(function() {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 4000,
+                easing: 'swing',
+                step: function(now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+</body></html>
