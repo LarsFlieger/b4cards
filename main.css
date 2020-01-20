@@ -34,3 +34,12 @@
 .carousel-cell {
     height: 200px;
 }
+
+
+
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
